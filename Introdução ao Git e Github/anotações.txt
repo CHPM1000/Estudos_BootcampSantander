@@ -1,0 +1,102 @@
+Github
+
+comandos basicos git
+
+cd dir mkdir del/ rmdir comandos
+
+dir > cd / > Cd Windows caiu numa pasta windowns > cd .. retorna > cls limpa a tela >
+ tab completa a palavra > mkdir comando que cria uma pasta > mkdir workspace > cls > 
+cd workspace> echo hello >  hello.txt > workspace>dir > cls > 
+
+CHAVES SSH E TOKENS
+
+CHAVE SSH : GERAMOS A CHAVE SSH NO GIT BASH PARA MAIOR  SEGURANÇA 
+
+bash
+ -tssh-keygen -t rsa -C "carloshenriquelaleque@gmail.com"
+coloco nome do projeto na sequencia 
+depois a senha
+
+sempre que abrir o bash a partir agora usar os comandos
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/primeira_chave_ssh na sequencia vem a senha 
+
+
+GIT COMMIT
+
+
+crio uma pasta, vou ate o diretorio na pasta clico com botao esquerdo e abro o git bash hero
+
+$ mkdir livro-receitas criando a pasta 
+cd livro-receitas
+git init 
+ls -a 
+cd .git/
+cd
+git config --global user.email "carloshenriquelaleque@gmail.com"
+git config --global user.name chpm1000
+
+agora vamos criar um arquivo markdown volto na pasta workspace e procuro ate achar o git aonde tem a pasta do git
+crio a pasta feijao.md "md de markdown" 
+
+abriu o arquivo no visual studio coloquei uma receita agora volto pro git bash
+
+git add *
+git commit -m "commit inicial"
+ls
+git status
+*****************
+mkdir receitas (movendo arquivos pasta nova)
+ls
+mv feijao.md ./receitas/
+ctrl L limpa a tela
+ls
+git status
+git add feijao
+git commit -m "cria pasta receitas,move arquivo receitas"
+git status
+git add ../feijao.mk
+
+depois vamos ao github criar repositorio apos criar pegar o link semelhante
+https://github.com/CHPM1000/Receita.git
+
+git remote add origin https://github.com/CHPM1000/Receita.git
+git remote -v
+git status
+git push origin master 
+
+CONCLUIDO
+
+Resolvendo conflitos no git merge
+ 
+quando voce for querer att qualquer arquivo seu procedimento é o seguinte
+
+ls na pasta
+git status
+git add *
+ls
+git status
+git commit -m "adicione tal coisa"
+git push origin master
+git pull origin master 
+copio o texto que estiver dando erro no visual corrijo no bloco de notas e volto ele no studio corrigido
+git status
+git add *
+git commit -m "resolve conflitos"
+git push origin master 
+
+
+*******************************************
+criando repositorio no github
+
+crio a pasta no pc
+depois abro o git hero dentro da pasta
+git clone colo o httl do repositorio na frente 
+git status
+git commit -m""
+git push origin main
+
+
+
+

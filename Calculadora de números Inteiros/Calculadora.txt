@@ -1,0 +1,14 @@
+fun main(){
+val z:Int
+    
+           fun calculate(a:Int,b:Int,operation:(Int,Int)->Int)= operation (a,b)
+       
+   z= calculate(10,	10){a,b ->
+   println("vou calcular! $a X $b")
+   println("Resultado")
+   
+     (a*b)
+   }
+    println(z)
+}
+
